@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiddie Universe | Cart</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html">Kiddie Universe</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="cart.html">Cart</a>
+          <a href="checkout.html">Checkout</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="section" data-cart>
+      <h1>Your cart</h1>
+      <div class="cart-list"></div>
+      <div class="cart-summary">
+        <p><strong>Total:</strong> <span data-total></span></p>
+        <div class="card-actions" style="margin-top: 1rem;">
+          <a href="products.html">Keep shopping</a>
+          <a class="secondary" href="checkout.html">Go to checkout</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Fast, friendly shipping with tracking updates.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
