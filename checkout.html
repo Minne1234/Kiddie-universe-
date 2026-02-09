@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiddie Universe | Checkout</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html">Kiddie Universe</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="cart.html">Cart</a>
+          <a href="checkout.html">Checkout</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="section">
+      <h1>Checkout</h1>
+      <p>Complete the details below. This is a demo checkout only.</p>
+      <form class="form" data-checkout-form>
+        <div>
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Jamie Rivera" required />
+        </div>
+        <div>
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="jamie@email.com" required />
+        </div>
+        <div>
+          <label for="address">Shipping address</label>
+          <textarea id="address" name="address" rows="3" placeholder="123 Happy Street" required></textarea>
+        </div>
+        <div>
+          <label for="shipping">Shipping speed</label>
+          <select id="shipping" name="shipping" required>
+            <option value="">Choose one</option>
+            <option>Standard (3-5 days)</option>
+            <option>Express (1-2 days)</option>
+          </select>
+        </div>
+        <div class="card-actions">
+          <button type="submit">Place order</button>
+          <a class="secondary" href="cart.html">Back to cart</a>
+        </div>
+      </form>
+      <div class="notice" data-checkout-notice style="display: none;"></div>
+    </main>
+
+    <footer>
+      <p>Questions? We are always here to help.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
